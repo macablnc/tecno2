@@ -50,10 +50,10 @@ void draw() {
   CapamanchaG.beginDraw();
   for (int i = 0; i < cant; i++) {
     if (conteoG[i] < 5) {
-      float x = random(width); 
+      float x = random(width); //posicion
       float y = random(height); 
-      float w = random(50, 150); 
-      float h = random(50, 150);
+      float w = random(250, 450); //ancho
+      float h = random(250, 450);//largo
       CapamanchaG.image(manchaG[i], x, y, w, h);
       conteoG[i]++; 
     }
@@ -65,10 +65,10 @@ void draw() {
   CapamanchaN.beginDraw();
   for (int i = 0; i < cant; i++) {
     if (conteoN[i] < 5) { 
-      float x = random(width); 
+      float x = random(width); //posicion
       float y = random(height); 
-      float w = random(50, 150); 
-      float h = random(50, 150);
+    float w = random(150, 250); //ancho
+      float h = random(150, 250);//largo
       CapamanchaN.image(manchaN[i], x, y, w, h); 
       conteoN[i]++; 
     }
@@ -80,10 +80,10 @@ void draw() {
   Capalineas.beginDraw();
   for (int i = 0; i < cant; i++) {
     if (conteoLineas[i] < 5) { 
-      float x = random(width); 
+      float x = random(width); //posicion
       float y = random(height); 
-      float w = random(5, 50); 
-      float h = random(5, 50);
+      float w = random(5, 50); //ancho
+      float h = random(5, 50); //largo
       Capalineas.image(lineas[i], x, y, w, h); 
       conteoLineas[i]++; 
     }
