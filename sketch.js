@@ -160,9 +160,7 @@ function draw() {
   image(CapamanchaN, 0, 0); // Dibujar la capa de manchas negras en el canvas principal
   image(Capalineas, 0, 0); // Dibujar la capa de líneas en el canvas principal
 
-  fill(255, 50, 200);
-  textSize(16);
-  text('Duración del sonido: ' + duracionSonido.toFixed(2) + ' segundos', 10, height - 10);
+
 
   antesHabiaSonido = haySonido; // Guardar estado del fotograma anterior
 }
